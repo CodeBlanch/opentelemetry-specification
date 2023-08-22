@@ -603,7 +603,7 @@ or equal to the measurement.
 SDKs MAY set different explicit histogram boundaries based on the defined unit for an instrument:
 
 | Unit (UCUM) | Boundaries Default Value |
-| --- | --- | --- | --- |
+| --- | --- |
 | `s` (seconds) | [ 0, 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 ] |
 
 ##### Base2 Exponential Bucket Histogram Aggregation
