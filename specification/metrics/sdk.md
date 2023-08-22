@@ -596,6 +596,16 @@ bound (except at positive infinity).  A measurement is defined to fall
 into the greatest-numbered bucket with boundary that is greater than
 or equal to the measurement.
 
+###### Explicit Bucket Histogram Aggregation Defaults
+
+**Status**: [Experimental](../document-status.md)
+
+SDKs MAY set different explicit histogram boundaries based on the defined unit for an instrument:
+
+| Unit (UCUM) | Boundaries Default Value |
+| --- | --- | --- | --- |
+| `s` (seconds) | [ 0, 0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10 ] |
+
 ##### Base2 Exponential Bucket Histogram Aggregation
 
 The Base2 Exponential Histogram Aggregation informs the SDK to collect data
